@@ -1,4 +1,11 @@
-c= int(input('insira a temperatura em Celsius'))
-converted_f= c *32
+temp = int(input('insira a temperatura para conversão'))
 
-print(f"a temperatura em fahreinheit é de {converted_f}")
+medidor = input('insira se é celsius ou fahrenhein')
+
+if medidor == "celsius":
+    converted_temp= (temp * 1.8) +  32
+    print(f'a temperatura em fahreinheit é de {converted_temp}')
+
+elif medidor == "fahreinhein":
+    converted_temp = (temp -32) * 5/9
+    print(f'a temperatura convertida é de {converted_temp}')
