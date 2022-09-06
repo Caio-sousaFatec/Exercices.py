@@ -9,3 +9,4 @@ if medidor == "celsius":
 elif medidor == "fahreinhein":
     converted_temp = (temp -32) * 5/9
     print(f'a temperatura convertida é de {converted_temp}')
+## that's all folks
