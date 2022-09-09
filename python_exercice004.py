@@ -1,6 +1,7 @@
 tipo = input('alcool ou gasolina?')
 quantidade = int(input('quantos litros vai querer abastecer?'))
 
+tipo.upper()
 
 preco_A = 2.9
 preco_G= 3.3
@@ -10,7 +11,7 @@ preco_total_A = quantidade*preco_A
 
 if tipo == 'gasolina':
     print(f'o total sem desconto é de {preco_total_G}')
-elif tipo =='alcool':
+elif tipo =='alcool' :
     print(f'o total sem desconto é de {preco_total_A}')
 
 desconto_baixo_G = preco_total_G - (preco_total_G * 0.02)
